@@ -345,6 +345,28 @@ body {
     position: fixed;
   }
 
+  .table-sheet thead {
+    background-color: #bfbfbf;
+  }
+
+  .table-sheet tbody tr {
+    background-color: #e8f2dd;
+  }
+
+  .note-content h4 {
+    background-color: #f5f6fa;
+  }
+
+  .page-footer .left-side,
+  .page-footer .left-side::after {
+    background-color: #7f3b80;
+  }
+
+  .page-footer .right-side::before,
+  .page-footer .right-side {
+    background: linear-gradient(to right, #74a248 20%, #31562b 97%);
+  }
+
   .sheet {
     margin: 0;
   }

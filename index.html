@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Itinerary Paket Tour</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/font-awesome.min.css"
+    integrity="sha512-I8lSB676wT2jGSNnvIhbYGqHMiZOc0+cl18soJSWPvJCkGm8xnTcXZafn2xTf1woMXz1AY3Z1Vd/qAPvjXB4Kw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="sheet-outer A4">
+    <section class="sheet padding-5mm">
+      <div class="page-header">
+        <div class="img-logo">
+          <img src="https://storage.googleapis.com/muslimpergi/uploads/site/logo/102/medium_logoMP.png" alt="">
+        </div>
+        <div class="title-sheet">
+          <h3>Itinerary Mutiara Sunnah Travel</h3>
+          <h3>UMROH PLUS TURKI LIBURAN AKHIR TAHUN DESEMBER 2024</h3>
+        </div>
+      </div>
+
+
+      <div class="page-footer">
+        <div class="left-side col">
+          <div class="information">
+            <div class="icon">
+              <i class="fa fa-map-marker"></i>
+            </div>
+            <div class="content">
+              <h4>Grand Kota Bintang</h4>
+              <p>
+                Grand Kota Bintang Boulevard Blok B.8 , Kel. Jakasampurna, Kec. Bekasi Barat - Kota Bekasi
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="right-side col">
+          <div class="information">
+            <div class="info-1">
+              <ul>
+                <li>
+                  <i class="fa fa-phone"></i>
+                  <span>021 - 89494341</span>
+                </li>
+                <li>
+                  <i class="fa fa-envelope"></i>
+                  <span>mutiarasunnahmandiri@gmail.com</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="info-2">
+              <ul>
+                <li>
+                  <span>0812 9087 4874</span>
+                </li>
+                <li>
+                  <span>info@mutiarasunnah.co.id</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <table style="width: 100%">
+        <thead>
+          <tr>
+            <td>
+              <div class="page-header-space"></div>
+            </td>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>
+              <table class="table-sheet">
+                <thead>
+                  <tr>
+                    <td class="text-center p-2" style="width: 28%;">
+                      <span>Hari / Tanggal</span>
+                    </td>
+                    <td class="text-center p-2">
+                      <span>Kegiatan</span>
+                    </td>
+                  </tr>
+                </thead>
+      
+                <tbody>
+                  <!-- Looping Day itinerary Start -->
+                  <tr>
+                    <td>
+                      <!-- {{ $dayjs(itinerary.at).format('dddd, DD MMMM YYYY') }} -->
+                      <span>
+                        Selasa, 16 Juli 2024
+                      </span>
+                    </td>
+      
+                    <td>
+                      <!-- {{ itinerary.title }} -->
+                      <!-- v-html="itinerary.description" -->
+                      <span>
+                        <ul>
+                          <li>19.00 Kumpul di Anara Hotel.</li>
+                          <li>22.00 Profiling Pesawat Saudi Airline.</li>
+                        </ul>
+                      </span>
+                    </td>
+                  </tr>
+                  <!-- End Loop Itinerary Day -->
+                </tbody>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Catatan Content -->
+          <tr>
+            <td class="note-content">
+              <h4>Catatan</h4>
+              <ul>
+                <li>
+                  Itinerary dapat berubah sewaktu-waktu tanpa dan atau dengan pemeberitahuan terlebih dahulu, tergantung Kebijakan kedua negara (Saudi dan Indonesia), maskapai, hotel dan situasi kondisi di lokasi.
+                </li>
+                <li>
+                  Jamaah tidak dapat menuntut Ganti Rugi / Kompensasi atas kejadian di atas (poin 1).
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <!-- End Catatan Content -->
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td>
+              <div class="page-footer-space"></div>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+  </div>
+</body>
+</html>

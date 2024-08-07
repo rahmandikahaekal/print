@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=0.45, initial-scale=0.45">
   <title>Itinerary Paket Tour</title>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/font-awesome.min.css"
     integrity="sha512-I8lSB676wT2jGSNnvIhbYGqHMiZOc0+cl18soJSWPvJCkGm8xnTcXZafn2xTf1woMXz1AY3Z1Vd/qAPvjXB4Kw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,6 +13,10 @@
 </head>
 
 <body>
+  <button id="printButton">
+    <i class="fa fa-print"></i> <span>Print PDF</span>
+  </button>
+
   <div class="sheet-outer A4">
     <section class="sheet padding-5mm">
       <div class="page-header">
@@ -25,8 +30,6 @@
       </div>
 
       <div class="page-footer-bg"></div>
-      <!-- <img class="page-footer-sheet" src="https://storage.googleapis.com/muslimpergi/uploads/galler/pict/5989/image.webp" alt=""> -->
-
 
       <table style="width: 100%">
         <thead>
@@ -306,7 +309,20 @@
         </tfoot>
       </table>
 
+      <div class="page-footer-bg-2"></div>
     </section>
   </div>
+
+  <script>
+    document.getElementById('printButton').addEventListener('click', function () {
+      // Scroll ke atas
+      window.scrollTo(0, 0);
+
+      // Tunggu sejenak agar scroll selesai sebelum mencetak
+      setTimeout(function () {
+          window.print();
+      }, 500); // Tunggu 500 milidetik, sesuaikan jika perlu
+    });
+  </script>
 </body>
 </html>

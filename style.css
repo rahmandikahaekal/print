@@ -1,3 +1,40 @@
+#printButton {
+  background: #79b800;
+  color: #fff;
+  
+  font-weight: 700;
+  font-size: 16px;
+
+  padding: 10px;
+  
+  border: none;
+  border-radius: 0 .75rem .75rem 0;
+  
+  z-index: 10;
+  bottom: 25px;
+  position: fixed;
+  box-shadow: 0 3px 30px rgba(0, 0, 0, .1), 0 3px 20px rgba(0, 0, 0, .1);
+
+  cursor: pointer;
+}
+
+#printButton:hover {
+  background: #a64ad1;
+}
+
+#printButton span {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 991px) {
+  #printButton i {
+    font-size: 20px;
+  }
+  #printButton span {
+    display: none;
+  }
+}
+
 .note-content {
   width: auto;
   color: #333;
@@ -30,6 +67,7 @@
 body {
   font-family: "Nunito-Regular", "Arial", "Helvetica", sans-serif;
   margin: 0;
+  font-size: 16px;
 }
 
 .sheet-outer {
@@ -145,10 +183,6 @@ body {
   height: 120px;
 }
 
-.page-footer-sheet {
-  width: 100%;
-}
-
 .page-footer-bg {
   background: url('https://storage.googleapis.com/muslimpergi/uploads/gallery/pict/5989/image.webp');
   background-position: bottom;
@@ -156,10 +190,20 @@ body {
   background-size: cover;
   height: 65px;
   width: 100%;
+  opacity: 0;
+}
 
-  position: absolute;
-  bottom: 0;
+.page-footer-bg-2 {
+  background: url('https://storage.googleapis.com/muslimpergi/uploads/gallery/pict/5989/image.webp');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 65px;
+  width: 100%;
+
   left: 0;
+  bottom: 0;
+  position: absolute;
 }
 
 @media screen {
@@ -179,7 +223,18 @@ body {
   margin: 0;
 }
 
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
 @media print {
+  #printButton {
+    opacity: 0;
+  }
+
   @page {
     size: A4;
   }
@@ -209,18 +264,16 @@ body {
   }
 
   .page-footer-bg {
+    opacity: 1;
     height: 65px;
     width: 100%;
-    position: fixed;
     bottom: 0;
     left: 0;
+    position: fixed;
   }
 
-  .page-footer-sheet {
-    height: 65px;
-    width: 100%;
-    bottom: 0;
-    position: fixed;
+  .page-footer-bg-2 {
+    opacity: 0;
   }
 
   .sheet {

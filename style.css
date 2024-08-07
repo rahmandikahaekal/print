@@ -145,6 +145,10 @@ body {
   height: 120px;
 }
 
+.page-footer-sheet {
+  width: 100%;
+}
+
 .page-footer-bg {
   background: url('https://storage.googleapis.com/muslimpergi/uploads/gallery/pict/5989/image.webp');
   background-position: bottom;
@@ -153,9 +157,9 @@ body {
   height: 65px;
   width: 100%;
 
+  position: absolute;
   bottom: 0;
   left: 0;
-  position: absolute;
 }
 
 @media screen {
@@ -210,6 +214,13 @@ body {
     position: fixed;
     bottom: 0;
     left: 0;
+  }
+
+  .page-footer-sheet {
+    height: 65px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
   }
 
   .sheet {

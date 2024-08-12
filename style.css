@@ -260,11 +260,13 @@ body {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 1;
+    visibility: initial;
     height: 65px;
     width: 100%;
     left: 0;
     bottom: 0;
-    position: fixed;
+    position: fixed; 
   }
 
   .sheet {

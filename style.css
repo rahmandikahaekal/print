@@ -256,6 +256,14 @@ body {
   }
 
   .page-footer-bg {
+    background: url('https://storage.googleapis.com/muslimpergi/uploads/gallery/pict/5989/image.webp');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
     position: fixed;
   }
 

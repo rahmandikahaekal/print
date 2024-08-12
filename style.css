@@ -256,10 +256,6 @@ body {
   }
 
   .page-footer-bg {
-    height: 65px;
-    width: 100%;
-    bottom: 0;
-    left: 0;
     position: fixed;
   }
 

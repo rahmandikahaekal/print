@@ -194,22 +194,10 @@ body {
   background-size: cover;
   height: 65px;
   width: 100%;
-  opacity: 0;
-}
-
-.page-footer-bg-2 {
-  background: url('https://storage.googleapis.com/muslimpergi/uploads/gallery/pict/5989/image.webp');
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 65px;
-  width: 100%;
-
   left: 0;
   bottom: 0;
   position: absolute;
 }
-
 @media screen {
   body {
     background: #e0e0e0;
@@ -268,16 +256,11 @@ body {
   }
 
   .page-footer-bg {
-    opacity: 1;
     height: 65px;
     width: 100%;
     bottom: 0;
     left: 0;
     position: fixed;
-  }
-
-  .page-footer-bg-2 {
-    opacity: 0;
   }
 
   .sheet {

@@ -197,6 +197,7 @@ body {
   left: 0;
   bottom: 0;
   position: absolute;
+  page-break-after: always;
 }
 @media screen {
   body {
@@ -266,6 +267,7 @@ body {
     left: 0;
     bottom: 0;
     position: fixed; 
+    page-break-after: always;
   }
 
   .sheet {

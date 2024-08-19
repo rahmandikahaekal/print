@@ -45,6 +45,8 @@
   display: block;
   margin: 20px 20px 0;
   border: 1px solid #EBE6DE;
+
+  page-break-inside:avoid;
 }
 
 .note-content h4 {
@@ -92,15 +94,19 @@ body {
 }
 
 .sheet.padding-5mm {
-  padding: 5mm 5mm;
-}
-
-.page-header {
-  height: 150px;
+  padding: 5mm;
 }
 
 .page-header-space {
-  height: 200px;
+  /* min-height: 250px; */
+  /* height: 250px; */
+  max-height: 280px;
+  /* margin-bottom: 15px; */
+  /* padding-bottom: 15px; */
+}
+
+.page-header-space div {
+  opacity: 0;
 }
 
 .page-header {
@@ -109,6 +115,33 @@ body {
   width: 100%;
   margin: 0 -19px;
 }
+
+
+.page-footer-space {
+  height: 120px;
+}
+
+.page-footer-space img {
+  width: 100%;
+  height: auto;
+
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+/* .page-footer-bg {
+  background: url('https://storage.googleapis.com/muslimpergi/uploads/gallery/pict/5989/image.webp');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 65px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  page-break-after: always;
+} */
 
 .img-logo {
   margin-top: 20px;
@@ -135,6 +168,11 @@ body {
   text-transform: uppercase;
 }
 
+.title-sheet p {
+  color: #333;
+  margin: 0;
+}
+
 .table-sheet {
   width: 100%;
   padding: 0 20px;
@@ -154,6 +192,7 @@ body {
 
 .table-sheet tbody tr {
   background-color: #e8f2dd;
+  page-break-inside: avoid;
 }
 
 .table-sheet tbody tr:nth-child(even) {
@@ -183,22 +222,6 @@ body {
   margin-bottom: 0;
 }
 
-.page-footer-space {
-  height: 120px;
-}
-
-.page-footer-bg {
-  background: url('https://storage.googleapis.com/muslimpergi/uploads/gallery/pict/5989/image.webp');
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 65px;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  position: absolute;
-  page-break-after: always;
-}
 @media screen {
   body {
     background: #e0e0e0;
@@ -215,7 +238,6 @@ body {
   size: A4;
   margin: 0;
 }
-
 
 @media (max-width: 768px) {
   body {
@@ -244,19 +266,11 @@ body {
     position: fixed;
   }
 
-  .table-sheet thead {
-    background-color: #bfbfbf;
+  .page-header-space div {
+    opacity: 0;
   }
 
-  .table-sheet tbody tr {
-    background-color: #e8f2dd;
-  }
-
-  .note-content h4 {
-    background-color: #f5f6fa;
-  }
-
-  .page-footer-bg {
+  /* .page-footer-bg {
     background: url('https://storage.googleapis.com/muslimpergi/uploads/gallery/pict/5989/image.webp');
     background-position: bottom;
     background-repeat: no-repeat;
@@ -268,14 +282,21 @@ body {
     bottom: 0;
     position: fixed; 
     page-break-after: always;
+  } */
+
+  .page-footer-space img {
+    margin: 0 -19px;
+
+    width: 100vw;
+    bottom: -60px;
+    position: relative;
   }
 
   .sheet {
     margin: 0;
   }
-
-  .sheet-outer.A4,
-  .sheet-outer.A5.landscape {
+  
+  .sheet-outer.A4 {
     width: 210mm;
   }
 }
